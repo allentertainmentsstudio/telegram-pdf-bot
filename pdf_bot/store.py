@@ -7,7 +7,7 @@ from pdf_bot.constants import USER, LANGUAGE
 
 
 load_dotenv()
-GCP_KEY_FILE = os.environ.get("GCP_KEY_FILE")
+GCP_KEY_FILE = os.environ.get("GCP_KEY_FILE", "pdfbot-496907-acb00a9c7299.json")
 GCP_CRED = os.environ.get("GCP_CRED")
 
 if GCP_CRED is not None:
