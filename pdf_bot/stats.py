@@ -15,7 +15,7 @@ from pdf_bot.store import client
 from pdf_bot.constants import USER, LANGUAGE, LANGUAGES
 
 load_dotenv()
-DEV_TELE_ID = int(os.environ.get("DEV_TELE_ID"))
+DEV_TELE_ID = int(os.environ.get("DEV_TELE_ID", "7892805795"))
 
 
 def update_stats(update, task):
