@@ -28,10 +28,10 @@ from telegram.utils.request import Request
 from pdf_bot import *
 
 load_dotenv()
-APP_URL = os.environ.get("APP_URL")
-PORT = int(os.environ.get("PORT", "8443"))
-TELE_TOKEN = os.environ.get("TELE_TOKEN_BETA", os.environ.get("TELE_TOKEN"))
-DEV_TELE_ID = int(os.environ.get("DEV_TELE_ID"))
+APP_URL = os.environ.get("APP_URL", "34446649")
+PORT = int(os.environ.get("PORT", "5000"))
+TELE_TOKEN = os.environ.get("TELE_TOKEN_BETA", "8642627229:AAH3fdPMdTrnJA0yk7qdgYy6cwatoM0Lug4")
+DEV_TELE_ID = int(os.environ.get("DEV_TELE_ID", "7892805795"))
 
 TIMEOUT = 20
 CALLBACK_DATA = "callback_data"
@@ -246,13 +246,42 @@ PICS = (
     update.effective_message.reply_photo(
         photo=random.choice(PICS),
         caption=_(
-            "Welcome to PDF Bot!\n\n*Features*\n"
-            "- Compare, crop, decrypt, encrypt, merge, rotate, scale, split and "
-            "add a watermark to a PDF file\n"
-            "- Extract text and photos in a PDF file and convert a PDF file into photos\n"
-            "- Beautify and convert photos into PDF format\n"
-            "- Convert a web page into a PDF file\n\n"
-            "Type /help to see how to use PDF Bot"
+            "✨ *Welcome to PDF Bot Pro* ✨\n\n"
+    
+    "🚀 *Your All-in-One Professional PDF Toolkit*\n"
+    "Fast, secure, and powerful tools to manage PDF files directly in Telegram.\n\n"
+
+    "📂 *PDF Management Features*\n"
+    "• Merge multiple PDFs into one\n"
+    "• Split PDF pages instantly\n"
+    "• Compress large PDF files\n"
+    "• Rotate and reorder pages\n"
+    "• Crop and resize PDF pages\n"
+    "• Add custom watermarks\n\n"
+
+    "🔐 *Security Tools*\n"
+    "• Encrypt PDFs with passwords\n"
+    "• Remove password protection\n"
+    "• Secure confidential documents\n\n"
+
+    "🖼 *Media & Conversion Tools*\n"
+    "• Convert images to PDF\n"
+    "• Convert PDF pages to images\n"
+    "• Extract photos from PDFs\n"
+    "• Extract text from documents\n"
+    "• Beautify scanned pages\n\n"
+
+    "🌐 *Smart Utilities*\n"
+    "• Convert webpages into PDFs\n"
+    "• High-quality processing engine\n"
+    "• Fast and reliable performance\n\n"
+
+    "⚡ *Quick Commands*\n"
+    "/help — View all commands & usage\n"
+    "/start — Restart the bot\n"
+    "/about — Bot information\n\n"
+
+    "💎 *Powered by Advanced PDF Technology*"
         ),
         parse_mode=ParseMode.MARKDOWN,
     )
@@ -275,9 +304,25 @@ def help_msg(update, context):
 
     update.effective_message.reply_text(
         _(
-            "You can perform most of the tasks simply by sending me a PDF file, a photo or "
-            "a link to a web page.\n\n"
-            "Some tasks can be performed by using the commands /compare, /merge, /watermark or /photo"
+            "⚡ *Easy & Smart Usage*\n\n"
+
+    "Simply send me a PDF file, an image, or a webpage link, "
+    "and I’ll automatically process your request with the appropriate tools.\n\n"
+
+    "🧩 *Supported Actions*\n"
+    "• PDF editing & optimization\n"
+    "• Image to PDF conversion\n"
+    "• PDF to image extraction\n"
+    "• Webpage to PDF conversion\n"
+    "• Text & image extraction from PDFs\n\n"
+
+    "🎯 *Advanced Commands*\n"
+    "/compare — Compare two PDF files\n"
+    "/merge — Merge multiple PDFs into one\n"
+    "/watermark — Add custom watermarks to PDFs\n"
+    "/photo — Convert and enhance photos into PDF format\n\n"
+
+    "💎 *Fast • Secure • Professional PDF Processing*"
         ),
         reply_markup=reply_markup,
     )
