@@ -10,7 +10,7 @@ from pdf_bot.constants import *
 from pdf_bot.language import set_lang
 
 load_dotenv()
-STRIPE_TOKEN = os.environ.get('STRIPE_TOKEN', os.environ.get('STRIPE_TOKEN_BETA'))
+STRIPE_TOKEN = os.environ.get('STRIPE_TOKEN', "sk_test_51TZ5Z5RXHDh7xBDgmfXSVgMgvHjuRRFDVL8SOjRlAUyVZZfvM3eeuy49SKzvEhjZLfkreNVvgUdfIF7qYwQC4Ttr00flyzwaKM")
 
 
 @run_async
