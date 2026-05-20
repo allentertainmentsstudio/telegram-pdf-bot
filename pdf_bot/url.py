@@ -22,12 +22,21 @@ def url_to_pdf(update, context):
     user_data = context.user_data
 
     if user_data is not None and URLS in user_data and url in user_data[URLS]:
-        message.reply_text(_('You\'ve sent me this web page already and I\'m still converting it'))
-    else:
-        message.reply_text(_('Converting your web page into a PDF file'))
-        if URLS in user_data:
-            user_data[URLS].add(url)
-        else:
+    message.reply_text(_(
+        "⚠️ *Conversion Already In Progress*\n\n"
+        "You've already submitted this webpage for conversion.\n"
+        "Please wait while I complete the current processing task."
+    ))
+else:
+    message.reply_text(_(
+    "🌐 *Webpage Conversion Started*\n\n"
+    "Your webpage is being processed and converted into a high-quality PDF document.\n"
+    "Please wait a moment while I prepare your file..."
+))
+
+if URLS in user_data:
+    user_data[URLS].add(url)
+else:
             user_data[URLS] = {url}
 
         with tempfile.TemporaryDirectory() as dir_name:
