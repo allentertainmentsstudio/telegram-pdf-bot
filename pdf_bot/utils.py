@@ -288,7 +288,7 @@ def get_support_markup(update, context):
         _ = set_lang(update, context)
         keyboard = [
             [
-                InlineKeyboardButton(_("Join Channel"), f"https://t.me/{CHANNEL_NAME}"),
+                InlineKeyboardButton(_("Join Channel"), f"https://t.me/TeraBox_Support_Anuj_Bot"),
                 InlineKeyboardButton(_("Support PDF Bot"), callback_data=PAYMENT),
             ]
         ]
