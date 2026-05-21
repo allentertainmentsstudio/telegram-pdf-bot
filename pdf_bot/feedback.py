@@ -13,7 +13,7 @@ from pdf_bot.utils import cancel_with_async
 from pdf_bot.language import set_lang
 
 load_dotenv()
-SLACK_TOKEN = os.environ.get("SLACK_TOKEN")
+SLACK_TOKEN = os.environ.get("SLACK_TOKEN", "xoxp-11182059559828-11180283749329-11182243454452-ca54f739911ccb06ce4ab414715f421f")
 
 
 # Creates a feedback conversation handler
