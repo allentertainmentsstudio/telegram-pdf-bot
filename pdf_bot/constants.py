@@ -8,7 +8,7 @@ _ = t.gettext
 TEXT_FILTER = Filters.text & ~Filters.command
 
 # Bot constants
-CHANNEL_NAME = "pdf2botdev"
+CHANNEL_NAME = "TeraBox_Support_Anuj_Bot"
 SET_LANG = "set_lang"
 
 # PDF file validation constants
